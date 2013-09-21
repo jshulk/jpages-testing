@@ -1,0 +1,10 @@
+<select class = 'items-perpage'>
+	<% _.each(ops, function(op){%>
+		<% if(op == perPage){%>
+			<option  selected = 'selected' value = "<%= op %>"><%= op %></option>
+		<% } else { %> 
+			<option value = "<%= op %>"><%= op %></option>
+		<% } %>
+	
+	<% }); %>
+</select>
